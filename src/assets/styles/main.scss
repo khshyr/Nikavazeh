@@ -1,0 +1,102 @@
+@import './normalize.css';
+@import 'material-icons/iconfont/filled.css';
+@import 'material-icons/iconfont/outlined.css';
+
+@font-face {
+  font-family: nunito;
+  src: url("../fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: nunito-bold;
+  src: url("../fonts/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+:root {
+  --background: rgba(244, 244, 244,1);
+  --card-background:rgba(244, 244, 244,1);
+  --text: rgba(14, 16, 16,100);
+  --shadow: rgba(0,0,0,0.1);
+}
+
+.custom-color{
+  color: var(--text);
+}
+.custom-bg{
+  background-color: var(--background);
+}
+.card-bg{
+  background-color: var(--card-background);
+}
+
+body {
+  background-color: var(--background)!important;
+  color: var(--text);
+}
+a:hover,a:active,a:visited,a:link{
+  text-decoration: none;
+}
+
+#app {
+  font-family: nunito;
+}
+
+.nun-reg {
+  font-family: nunito;
+}
+
+.nun-bold {
+  font-family: nunito-bold;
+}
+
+.weight-300 {
+  font-weight: 300;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.w-10 {
+  width: 10% !important;
+}
+
+#search {
+  //background-image: url("../images/search-icon.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  text-indent: 20px;
+  background-color: var(--card-background);
+}
+
+.radius-10 {
+  border-radius: 10px;
+}
+
+.radius-5 {
+  border-radius: 5px;
+}
+
+.box-shadow {
+  -moz-box-shadow: 0 0 5px var(--shadow);
+  -webkit-box-shadow: 0 0 5px var(--shadow);
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+.navbar-shadow{
+  -moz-box-shadow:  1px 3px 5px 1px var(--shadow);
+  -webkit-box-shadow:  1px 3px 5px 1px var(--shadow);
+  box-shadow:  1px 3px 5px 1px var(--shadow);
+}
+.multiselect,.multiselect-options{
+  background: var(--card-background);
+  color: var(--text);
+}
